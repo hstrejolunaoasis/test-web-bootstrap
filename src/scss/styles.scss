@@ -1,0 +1,23 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+/* Fonts */
+@import "base/fonts";
+
+
+.upper{
+    background-color: rgba(0, 0, 0, 0.441);
+    height: 31px;
+    a{
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+    }
+}
+
+.icon-drop{
+    font-family: linearIcons;
+}
+
+
+
+
