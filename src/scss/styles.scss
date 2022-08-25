@@ -34,6 +34,15 @@
     font-weight: 800;
 }
 
+.navbar{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6012605725884104) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+}
+
 .dropdown{
     margin-top: -3.5px;
 }
