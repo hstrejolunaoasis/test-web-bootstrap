@@ -4,18 +4,45 @@
 @import "base/fonts";
 
 
+
 .upper{
-    background-color: rgba(0, 0, 0, 0.441);
+    background-color: rgba(0, 0, 0, 0.734);
     height: 31px;
-    a{
+    .upper-link{
+        font-family: Muli-Light;
         color: white;
         font-size: 14px;
         text-decoration: none;
+        :hover{
+            cursor: pointer;
+            color: red;
+        }
     }
 }
 
+.navbar-logo{
+    height: 50px;
+    font-size: 14px;
+}
+
+.nav-link{
+    text-align: center;
+    font-family: Muli-Light;
+}
+.active{
+    font-family: Muli;
+    font-weight: 800;
+}
+
+.dropdown{
+    margin-top: -3.5px;
+}
+
 .icon-drop{
-    font-family: linearIcons;
+    font-family: Linearicons-Free;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 

@@ -3,22 +3,98 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap w/ Webpack</title>
+    <title>FOA</title>
   </head>
+  <script src="./main.js"></script>
+
   <body>
-    <div class="upper container-fluid ">
+    <!-- upper -->
+    <div class="upper container-fluid">
       <div class="row">
-          <div class="row">
-            <div class="col">
-              <div class="container colfront d-flex pt-1 justify-content-end">
-                <a class="me-2" href="#">INFORME SOCIAL 2020</a>
-                <a href="#">IDIOMA</a>
+        <div class="row">
+          <div class="col">
+            <div class="container colfront d-flex pt-1 justify-content-end">
+              <a class="upper-link me-2">INFORME SOCIAL 2020</a>
+              <div class="dropdown">
+                <a
+                  class="upper-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >IDIOMA</a
+                >
                 <a class="icon-drop"></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+                  <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
-    <script src="./main.js"></script>
+    <!-- upper -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            class="navbar-logo ms-4 ps-1"
+            src="/images/fundacion1.png"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FILOSOFÍA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NUESTROS ORIGENES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CAMBIANDO VIDAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PROGRAMAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">REDES DE COLABORACION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SE PARTE DEL CAMBIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GALERÍA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">RECONOCIMIENTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRENSA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
   </body>
 </html>
