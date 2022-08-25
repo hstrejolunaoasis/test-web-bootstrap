@@ -1,0 +1,29 @@
+{
+  "name": "foa_bootstrap",
+  "version": "1.0.0",
+  "description": "FOA con Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hstrejolunaoasis/test-web-bootstrap.git"
+  },
+  "keywords": [
+    "Oasis"
+  ],
+  "author": "Hector Trejo Luna",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/hstrejolunaoasis/test-web-bootstrap/issues"
+  },
+  "homepage": "https://github.com/hstrejolunaoasis/test-web-bootstrap#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0"
+  }
+}
