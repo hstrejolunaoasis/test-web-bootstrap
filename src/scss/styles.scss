@@ -10,6 +10,7 @@
     height: 31px;
     .upper-link{
         font-family: Muli-Light;
+        font-weight: 100;
         color: white;
         font-size: 14px;
         text-decoration: none;
@@ -34,13 +35,41 @@
     font-weight: 800;
 }
 
-.navbar{
+.heroc{
+    height: 110vh;
+    background-image: url("/images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__text__todo{
+    font-family: Muli-Regular;
+    font-size: 30px;
+    color: #444444;
+}
+
+.hero__text{
+    p{
+        font-family: Muli-Regular;
+        line-height: 18px;
+        font-size: 14px;
+        color: #444444;
+    }
+}
+
+.hero__text__fundacion{
+    font-family: Muli-SemiBold;
+    font-size: 30px;
+    color: #444444;
+}
+
+.nav-container{
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.6012605725884104) 0%,
       rgba(0, 0, 0, 0) 100%
-    );
+    ); 
 }
 
 .dropdown{
