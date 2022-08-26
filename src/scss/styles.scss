@@ -283,3 +283,107 @@ label {
     @include colors(#7dbb3e);
   }
 }
+
+.footer__newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 35px;
+.footer__newsletter_form{
+  display: flex;
+  align-items: center;
+  height: 10px;
+  width: 200px;
+  margin-inline-start: -14.5%;
+  margin-block-end: 50px;
+  label{
+    color: #444444;
+    font-family: Muli;
+  }
+  input{
+    appearance: none;
+    border: 0.51px solid rgba(68, 68, 68, 0.2);
+    border-radius: 4px;
+    padding-block: 10px;
+    padding-inline-start: 15px;
+    width: 22em;
+  }
+  
+  button{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Muli;
+    background-color: #D3106C;
+    padding-block: 10px;
+    padding-inline: 15px;
+    margin-inline-start: 15px;
+    margin-block-start: 20px;
+    border: none;
+    border-radius: 4px;
+
+    :hover{
+      cursor: pointer;
+    }
+  }
+}
+
+  h1 {
+    font-family: Muli-Extra-Bold;
+    font-size: 50px;
+    height: 100px;
+    background-color: red;
+    background-image:
+      linear-gradient(
+        to right, 
+        #FA823C,
+        #f2b244 0%,
+        #FA823C 0%,
+        #FA823C 28.5%,
+        #f2b244 15.6%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+  }
+
+  .footer__newsletter_socialmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: 20px;
+    div{
+      display: flex;
+      a{
+        margin-inline: 4px;
+        :hover{
+          cursor: pointer;
+        }
+      }
+    }
+
+    p{
+      font-family: Avenir-Book;
+      color: rgba(68, 68, 68, 0.733);
+      margin-block-end: 2em;
+    }
+
+    span{
+      background-color: rgba(68,68,68,0.08);
+      width: 850%;
+      height: 1px;
+    }
+  }
+}
+
+.footer__bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 30px;
+  color: #434343bc;
+  font-family: Avenir-Light;
+}
