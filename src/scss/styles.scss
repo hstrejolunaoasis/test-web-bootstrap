@@ -3,7 +3,6 @@
 /* Fonts */
 @import "base/fonts";
 
-
 .upper {
   background-color: rgba(0, 0, 0, 0.734);
   height: 31px;
@@ -98,10 +97,10 @@
   div {
     padding-inline: 4em;
     padding-block: 3.5em;
-    h2{
-        font-family: Muli-SemiBold;
-        font-size: 30px;
-        line-height: 41px;
+    h2 {
+      font-family: Muli-SemiBold;
+      font-size: 30px;
+      line-height: 41px;
     }
     p {
       font-family: Muli-Regular;
@@ -111,32 +110,53 @@
   }
 
   #grid__cul {
+    padding-inline-start: 11vw;
+    padding-inline-end: 8vw;
+    @media(min-width: 1500px){
+      padding-inline-start: 14vw;
+      padding-inline-end: 8vw;
+    }
+    @media(min-width: 1920px){
+      padding-inline-start: 22vw;
+      padding-inline-end: 8vw;
+    }
     grid-area: cult;
     background-color: #f2ba34;
   }
   #grid__dis {
-    h2, p{
-        padding-inline-start: 30px;
+    padding-block-start: 20vh;
+    h2,
+    p {
+      padding-inline-start: 30px;
     }
     @media (min-width: 1632px) {
-        p{
-          max-width: 90%;
-        }
+      p {
+        max-width: 90%;
+      }
     }
     @media (min-width: 1920px) {
-      p{
-        color: red;
+      p {
         max-width: 80%;
       }
-  }
+    }
 
-    p{
-        padding-inline-end: 6vw;
+    p {
+      padding-inline-end: 6vw;
     }
     grid-area: dis;
     background-color: #4b4773;
   }
   #grid__com {
+    padding-inline-start: 11vw;
+    padding-inline-end: 8vw;
+    @media(min-width: 1500px){
+      padding-inline-start: 14vw;
+      padding-inline-end: 8vw;
+    }
+    @media(min-width: 1920px){
+      padding-inline-start: 22vw;
+      padding-inline-end: 8vw;
+    }
     grid-area: com;
     background-color: #1bb0af;
   }
