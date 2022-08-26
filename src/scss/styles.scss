@@ -90,7 +90,7 @@
     "com  dis"
     "edu edu"
     "sal hue";
-  height: 100vh;
+  height: auto;
   color: white;
   background-color: red;
 
@@ -211,4 +211,8 @@
     grid-area: hue;
     background-color: #80be41;
   }
+}
+.contact-form{
+  height: 65vh;
+  background-color: #f2ba34;
 }
