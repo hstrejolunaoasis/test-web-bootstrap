@@ -1,6 +1,14 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+
 
 module.exports = {
+  plugins: [
+    new MiniCSSExtractPlugin({
+      filename: "estilos.css"
+    }),
+  ],
   entry: './src/js/main.js',
   output: {
     filename: 'main.js',
@@ -14,6 +22,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.scss$/,
+        use: [
+          MiniCSSExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+          'postcss-loader'
+        ],
         test: /\.(scss)$/,
         use: [
           {
