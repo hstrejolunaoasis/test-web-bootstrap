@@ -2,6 +2,11 @@
 @import "~bootstrap/scss/bootstrap";
 /* Fonts */
 @import "base/fonts";
+label{
+  color: #444444be;
+  font-family: Muli;
+}
+
 
 .upper {
   background-color: rgba(0, 0, 0, 0.734);
@@ -214,5 +219,4 @@
 }
 .contact-form{
   height: 65vh;
-  background-color: #f2ba34;
 }
