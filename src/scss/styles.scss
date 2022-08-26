@@ -4,85 +4,152 @@
 @import "base/fonts";
 
 
-
-.upper{
-    background-color: rgba(0, 0, 0, 0.734);
-    height: 31px;
-    .upper-link{
-        font-family: Muli-Light;
-        font-weight: 100;
-        color: white;
-        font-size: 14px;
-        text-decoration: none;
-        :hover{
-            cursor: pointer;
-            color: red;
-        }
-    }
-}
-
-.navbar-logo{
-    height: 50px;
-    font-size: 14px;
-}
-
-.nav-link{
-    text-align: center;
+.upper {
+  background-color: rgba(0, 0, 0, 0.734);
+  height: 31px;
+  .upper-link {
     font-family: Muli-Light;
-}
-.active{
-    font-family: Muli;
-    font-weight: 800;
-}
-
-.heroc{
-    height: 110vh;
-    background-image: url("/images/Background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.hero__text__todo{
-    font-family: Muli-Regular;
-    font-size: 30px;
-    color: #444444;
-}
-
-.hero__text{
-    p{
-        font-family: Muli-Regular;
-        line-height: 18px;
-        font-size: 14px;
-        color: #444444;
-    }
-}
-
-.hero__text__fundacion{
-    font-family: Muli-SemiBold;
-    font-size: 30px;
-    color: #444444;
-}
-
-.nav-container{
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.6012605725884104) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ); 
-}
-
-.dropdown{
-    margin-top: -3.5px;
-}
-
-.icon-drop{
-    font-family: Linearicons-Free;
+    font-weight: 100;
     color: white;
     font-size: 14px;
     text-decoration: none;
+    :hover {
+      cursor: pointer;
+      color: red;
+    }
+  }
 }
 
+.navbar-logo {
+  height: 50px;
+  font-size: 14px;
+}
 
+.nav-link {
+  text-align: center;
+  font-family: Muli-Light;
+}
+.active {
+  font-family: Muli;
+  font-weight: 800;
+}
 
+.heroc {
+  height: 110vh;
+  background-image: url("/images/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.hero__text__todo {
+  font-family: Muli-Regular;
+  font-size: 30px;
+  color: #444444;
+}
+
+.hero__text {
+  p {
+    font-family: Muli-Regular;
+    line-height: 18px;
+    font-size: 14px;
+    color: #444444;
+  }
+}
+
+.hero__text__fundacion {
+  font-family: Muli-SemiBold;
+  font-size: 30px;
+  color: #444444;
+}
+
+.nav-container {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6012605725884104) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.dropdown {
+  margin-top: -3.5px;
+}
+
+.icon-drop {
+  font-family: Linearicons-Free;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "cult dis"
+    "com  dis"
+    "edu edu"
+    "sal hue";
+  height: 100vh;
+  color: white;
+  background-color: red;
+
+  div {
+    padding-inline: 4em;
+    padding-block: 3.5em;
+    h2{
+        font-family: Muli-SemiBold;
+        font-size: 30px;
+        line-height: 41px;
+    }
+    p {
+      font-family: Muli-Regular;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  #grid__cul {
+    grid-area: cult;
+    background-color: #f2ba34;
+  }
+  #grid__dis {
+    h2, p{
+        padding-inline-start: 30px;
+    }
+    @media (min-width: 1632px) {
+        p{
+          max-width: 90%;
+        }
+    }
+    @media (min-width: 1920px) {
+      p{
+        color: red;
+        max-width: 80%;
+      }
+  }
+
+    p{
+        padding-inline-end: 6vw;
+    }
+    grid-area: dis;
+    background-color: #4b4773;
+  }
+  #grid__com {
+    grid-area: com;
+    background-color: #1bb0af;
+  }
+  #grid__edu {
+    grid-area: edu;
+    background-color: #d03b81;
+  }
+  #grid__sal {
+    grid-area: sal;
+    background-color: #e44e55;
+  }
+  #grid__hue {
+    grid-area: hue;
+    background-color: #80be41;
+  }
+}
