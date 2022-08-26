@@ -112,11 +112,11 @@
   #grid__cul {
     padding-inline-start: 11vw;
     padding-inline-end: 8vw;
-    @media(min-width: 1500px){
+    @media (min-width: 1500px) {
       padding-inline-start: 14vw;
       padding-inline-end: 8vw;
     }
-    @media(min-width: 1920px){
+    @media (min-width: 1920px) {
       padding-inline-start: 22vw;
       padding-inline-end: 8vw;
     }
@@ -149,11 +149,11 @@
   #grid__com {
     padding-inline-start: 11vw;
     padding-inline-end: 8vw;
-    @media(min-width: 1500px){
+    @media (min-width: 1500px) {
       padding-inline-start: 14vw;
       padding-inline-end: 8vw;
     }
-    @media(min-width: 1920px){
+    @media (min-width: 1920px) {
       padding-inline-start: 22vw;
       padding-inline-end: 8vw;
     }
@@ -161,6 +161,24 @@
     background-color: #1bb0af;
   }
   #grid__edu {
+    div {
+      height: auto;
+      padding: 0;
+      max-width: 83%;
+      margin-inline-start: 7%;
+    }
+    @media (min-width: 1500px) {
+      div {
+        max-width: 80%;
+        margin-inline-start: 11%;
+      }
+    }
+    @media (min-width: 1920px) {
+      div {
+        max-width: 64%;
+        margin-inline-start: 20%;
+      }
+    }
     grid-area: edu;
     background-color: #d03b81;
   }
