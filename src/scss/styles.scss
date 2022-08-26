@@ -183,10 +183,31 @@
     background-color: #d03b81;
   }
   #grid__sal {
+    padding-inline-start: 11vw;
+    padding-inline-end: 8vw;
+    @media (min-width: 1500px) {
+      padding-inline-start: 14vw;
+      padding-inline-end: 8vw;
+    }
+    @media (min-width: 1920px) {
+      padding-inline-start: 22vw;
+      padding-inline-end: 8vw;
+    }
+
     grid-area: sal;
     background-color: #e44e55;
   }
   #grid__hue {
+    padding-inline-start: 7vw;
+    padding-inline-end: 11vw;
+    @media (min-width: 1500px) {
+      padding-inline-start: 6.5vw;
+      padding-inline-end: 10vw;
+    }
+    @media (min-width: 1920px) {
+      padding-inline-start: 5vw;
+      padding-inline-end: 19vw;
+    }
     grid-area: hue;
     background-color: #80be41;
   }
