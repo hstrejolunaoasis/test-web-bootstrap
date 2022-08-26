@@ -2,6 +2,7 @@
 @import "~bootstrap/scss/bootstrap";
 /* Fonts */
 @import "base/fonts";
+@import "base/mixins";
 label {
   color: #444444be;
   font-family: Muli;
@@ -225,6 +226,14 @@ label {
   margin-block-end: 20px;
 }
 .contact {
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15028018043154767) 0%,
+    rgba(0, 0, 0, 0) 17%
+  );
+
   h2 {
     color: #d3106c;
     font-size: 30px;
@@ -242,13 +251,35 @@ label {
   font-family: Muli;
   background-color: #D3106C;
   padding-block: 10px;
-  padding-inline: 15px;
-  margin-inline-start: 15px;
+  padding-inline: 45px;
   margin-block-start: 20px;
   border: none;
   border-radius: 4px;
 
   :hover{
     cursor: pointer;
+  }
+}
+
+.footer__colors {
+  display: flex;
+  width: 100vw;
+  .yellow {
+    @include colors(#fdb918);
+  }
+  .blue {
+    @include colors(#42c5c5);
+  }
+  .purple {
+    @include colors(#555289);
+  }
+  .pink {
+    @include colors(#e8298c);
+  }
+  .red {
+    @include colors(#e51c24);
+  }
+  .green {
+    @include colors(#7dbb3e);
   }
 }
