@@ -188,8 +188,10 @@ label {
     background-color: #d03b81;
   }
   #grid__sal {
+    padding-block-start: 27px;
+    padding-block-end: 39px;
     padding-inline-start: 11vw;
-    padding-inline-end: 8vw;
+    padding-inline-end: 75px;
     @media (min-width: 1500px) {
       padding-inline-start: 14vw;
       padding-inline-end: 8vw;
@@ -203,8 +205,10 @@ label {
     background-color: #e44e55;
   }
   #grid__hue {
+    padding-block-start: 33px;
     padding-inline-start: 7vw;
-    padding-inline-end: 11vw;
+    padding-inline-end: 12vw;
+    padding-inline-start: 7vw;
     @media (min-width: 1500px) {
       padding-inline-start: 6.5vw;
       padding-inline-end: 10vw;
