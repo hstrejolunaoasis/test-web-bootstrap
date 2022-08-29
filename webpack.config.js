@@ -6,7 +6,7 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   plugins: [
     new MiniCSSExtractPlugin({
-      filename: "estilos.css"
+      filename: "./css/estilos.css"
     }),
   ],
   entry: './src/js/main.js',
@@ -23,11 +23,12 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
+        include: path.resolve(__dirname, 'src/scss/styles.scss'),
         use: [
           MiniCSSExtractPlugin.loader,
           'css-loader',
+          'postcss-loader',
           'sass-loader',
-          'postcss-loader'
         ],
         test: /\.(scss)$/,
         use: [
@@ -51,8 +52,11 @@ module.exports = {
           {
             loader: 'sass-loader'
           }
-        ]
+        ],
+        sideEffects: true,
       }
+
+
     ]
   }
 }

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development",
-    "build": "webpack serve --mode production"
+    "build": "webpack --mode production",
+    "compile-sass": "node-sass src/scss/styles.scss css/style.comp.css"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "node-sass": "^7.0.1"
   }
 }
