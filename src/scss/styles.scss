@@ -53,10 +53,10 @@ label {
 
 .hero__text {
   p {
-    font-family: Muli-Regular;
+    font-family: Muli-Light;
     line-height: 18px;
     font-size: 14px;
-    color: #444444;
+    color: #444444bc;
   }
 }
 
@@ -115,6 +115,8 @@ label {
   }
 
   #grid__cul {
+    padding-block-start: 35px;
+    padding-block-end: 35px;
     padding-inline-start: 11vw;
     padding-inline-end: 8vw;
     @media (min-width: 1500px) {
@@ -129,7 +131,7 @@ label {
     background-color: #f2ba34;
   }
   #grid__dis {
-    padding-block-start: 20vh;
+    padding-block-start: 15vh;
     h2,
     p {
       padding-inline-start: 30px;
@@ -152,6 +154,8 @@ label {
     background-color: #4b4773;
   }
   #grid__com {
+    padding-block-start: 34px;
+    padding-block-end: 34px;
     padding-inline-start: 11vw;
     padding-inline-end: 8vw;
     @media (min-width: 1500px) {
